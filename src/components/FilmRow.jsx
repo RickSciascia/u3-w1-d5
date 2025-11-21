@@ -38,7 +38,7 @@ class FilmRow extends Component {
 
   render() {
     return (
-      <Row className="wrap mb-4 overflow-auto">
+      <Row className="mb-4">
         {this.state.films.map((element) => {
           return <SingleFilm singleElement={element} key={element.imdbID} />;
         })}
