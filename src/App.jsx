@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <MyNav />
-      {/* <Home /> */}
-      <Profile />
+      <Home />
+      {/* <Profile /> */}
       <Footer />
     </>
   );
