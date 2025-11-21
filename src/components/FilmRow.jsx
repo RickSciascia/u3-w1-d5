@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Row } from "react-bootstrap";
+import { Alert, Row, Spinner } from "react-bootstrap";
 import SingleFilm from "./SingleFilm";
 
 class FilmRow extends Component {
@@ -38,7 +38,23 @@ class FilmRow extends Component {
 
   render() {
     return (
-      <Row className="mb-4">
+      <Row className=" mb-4">
+        {" "}
+        {this.state.loading && (
+          <div className="text-center">
+            <Spinner animation="border" variant="danger" />
+          </div>
+        )}
+        {!this.state.loading && (
+          <>
+            {this.state.error ? (
+              <Alert variant="danger">Errore nel caricamento</Alert>
+            ) : (
+              <>{/* <Alert variant="success">TUTTO OK</Alert> */}</>
+              //   per testare funzionamento scommentare riga sopra
+            )}
+          </>
+        )}
         {this.state.films.map((element) => {
           return <SingleFilm singleElement={element} key={element.imdbID} />;
         })}

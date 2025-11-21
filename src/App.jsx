@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <MyNav />
-      {/* <StaticHead /> */}
       <Home />
       <Footer />
     </>
