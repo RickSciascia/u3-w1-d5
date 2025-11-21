@@ -1,10 +1,6 @@
 const MyNav = function () {
   return (
-    <nav
-      className="navbar navbar-expand-lg bg-dark"
-      data-bs-theme="dark"
-      style={{ backgroundcolor: "#221f1f !important" }}
-    >
+    <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img src="/logo.png" style={{ width: "100px", height: "55px" }} />
