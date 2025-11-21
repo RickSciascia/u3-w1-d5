@@ -5,12 +5,14 @@ import MyNav from "./components/MyNav";
 import Footer from "./components/Footer";
 import StaticHead from "./components/StaticHead";
 import Home from "./components/Home";
+import Profile from "./components/Profile";
 
 function App() {
   return (
     <>
       <MyNav />
-      <Home />
+      {/* <Home /> */}
+      <Profile />
       <Footer />
     </>
   );
